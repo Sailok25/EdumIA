@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ideas para fomentar la creatividad en clase"
-date: 2025-08-28
+date: 2025-10-24
 tags: [convivencia, inclusión]
 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bienvenido a EdumIA
+title: Inicio
 ---
 
 # 🧠 EdumIA

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | EdumIA</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ "/" | relative_url }}">Inicio</a>
+      <a href="{{ "/blog" | relative_url }}">Blog</a>
+      <a href="{{ "/bot" | relative_url }}">Bot</a>
+      <a href="{{ "/about" | relative_url }}">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Script del chatbot -->
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/10/16/11/20251016115706-6S72OI57.js" defer></script>
+</body>
+</html>

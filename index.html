@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdumIA - Xatbot per a Professors</title>
+  <!-- Tailwind CSS vía CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome per a iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Configuració de Tailwind (colors personalitzats) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',  // Blau principal
+            secondary: '#1E40AF', // Blau fosc
+            light: '#F8FAFC',    // Fons clar
+            dark: '#1F2937',     // Text fosc
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-light text-dark font-sans">
+  <!-- Capçalera minimalista -->
+  <header class="fixed top-0 w-full bg-white shadow-sm z-50 py-4 px-6 flex justify-between items-center">
+    <div class="logo flex items-center gap-2">
+      <i class="fas fa-robot text-primary text-2xl"></i>
+      <span class="text-xl font-bold">EdumIA</span>
+    </div>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="#inici" class="hover:text-primary transition-colors">Inici</a></li>
+        <li><a href="#com-funciona" class="hover:text-primary transition-colors">Com funciona</a></li>
+        <li><a href="#caracteristiques" class="hover:text-primary transition-colors">Característiques</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Secció Hero -->
+  <section id="inicio"
+    class="min-h-screen flex items-center justify-center px-6 py-24 bg-gradient-to-r from-light to-blue-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-dark">Respostes instantánies per a profesors</h1>
+        <p class="text-lg mb-8 text-gray-600"> Consulta els teus dubtes acadèmics, pedagògics o administratius amb
+          EdumIA, el teu assistent 24/7.
+        </p> <button id="open-chatbot"
+          class="bg-primary hover:bg-secondary text-white py-3 px-6 rounded-full flex items-center gap-2 transition-colors">
+          <i class="fas fa-comments"></i> <a
+            href="https://cdn.botpress.cloud/webchat/v3.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/10/16/11/20251016115706-HQ8SNDYQ.json">Obrir
+            Chatbot</a> </button>
+      </div>
+      <div class="md:w-1/2 flex justify-center"> <i class="fas fa-robot text-primary text-9xl"></i> </div>
+    </div>
+  </section>
+
+  <!-- Secció: Com funciona -->
+  <section id="com-funciona" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Com utilitzar EdumIA?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6 rounded-lg bg-light">
+          <div class="w-20 h-20 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+            <i class="fas fa-mouse-pointer text-primary text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fes clic al botó</h3>
+          <p class="text-gray-600">Troba el botó a la cantonada inferior dreta i fes-hi clic.</p>
+        </div>
+        <div class="text-center p-6 rounded-lg bg-light">
+          <div class="w-20 h-20 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+            <i class="fas fa-keyboard text-primary text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Escriu la teva pregunta</h3>
+          <p class="text-gray-600">Pregunta sobre temes acadèmics, recursos o estratègies pedagògiques.</p>
+        </div>
+        <div class="text-center p-6 rounded-lg bg-light">
+          <div class="w-20 h-20 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+            <i class="fas fa-reply text-primary text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Rep la teva resposta</h3>
+          <p class="text-gray-600">EdumIA et respondrà a l'instant amb informació clara i útil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secció: Característiques -->
+  <section id="caracteristiques" class="py-20 px-6 bg-blue-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Característiques principals</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+            <i class="fas fa-bolt text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Respostes ràpides</h3>
+          <p class="text-gray-600 text-center">Podras obténir informació a l'instant, sense esperes.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+            <i class="fas fa-clock text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Disponible 24/7</h3>
+          <p class="text-gray-600 text-center">Accedeix a EdumIA en qualsevol moment, des de qualsevol lloc o disositiu.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto mb-4 bg-blue-50 rounded-full flex items-center justify-center">
+            <i class="fas fa-language text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Multilingüe</h3>
+          <p class="text-gray-600 text-center">Pots parlar amb el bot en <strong>qualsevol idioma</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Peu de pàgina -->
+  <footer class="bg-white py-8 px-6 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-center mb-4">
+        <div class="logo flex items-center gap-2">
+          <i class="fas fa-robot text-primary text-2xl"></i>
+          <span class="text-xl font-bold">EdumIA</span>
+        </div>
+      </div>
+      <p class="text-center text-gray-500">
+        © 2025 EdumIA | La pagina a estat desenvolupat per
+        <a href="https://github.com/Sailok25" class="text-primary hover:underline font-medium" target="_blank"
+          rel="noopener noreferrer">
+          Sailok25
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts del Botpress -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/10/16/11/20251016115706-6S72OI57.js" defer></script>
+  <!-- Script per obrir el xatbot -->
+  <script>
+    document.getElementById('open-chatbot').addEventListener('click', function () {
+      window.botpressWebChat.sendEvent({ type: 'show' });
+    });
+  </script>
+</body>
+
+</html>

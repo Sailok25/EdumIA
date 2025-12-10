@@ -2,7 +2,7 @@
 
 **EdumIA** es un proyecto interactivo diseñado para ayudar a profesores a resolver dudas académicas, pedagógicas o administrativas de manera rápida y eficiente mediante un chatbot especializado.
 
-🔗 **Demo en vivo:** [https://sailok25.github.io/edumia/](sailok25.github.io/EdumIA/)
+🔗 **Demo en vivo:** [https://sailok25.github.io/edumia/](https://sailok25.github.io/EdumIA/)
 
 ---
 
